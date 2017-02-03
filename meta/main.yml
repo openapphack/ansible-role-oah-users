@@ -1,0 +1,19 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: Vinod Panicker
+  description:  "Ansible role to install and update OAH Shell"
+  company: ""
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.0
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  categories:
+    - networking
+    - system

@@ -1,0 +1,21 @@
+---
+#remove oah user
+
+#remove oah user gitlab key
+
+#remove oah env user
+
+#remove oah user gitlab key
+
+#remove oah user github key
+
+# check and add oah user if OAH_USER env variable set or oah_user ansible variable is set
+
+# check and add oah env user if OAH_ENV_USER env variable set or oah_env_user ansible variable is set
+
+# check and add ssh key for github if  oah_enable_github_key is true and oah_env_user_github key is set
+
+# check and add ssh key for gitlab if  oah_enable_gitlab_key is true and oah_env_user_gitlab key is set
+
+
+# display users created if verbose option enabled

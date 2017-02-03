@@ -1,0 +1,14 @@
+---
+# validate if oah user created
+
+# Check OAH_USER environment variable value
+
+# check oah_user ansible variable value
+
+# check OAH_ENV_USER value
+
+# check oah-env-user ansible variable value
+
+# check oah-env-user value is set in the users.txt
+
+# display oah env user and oah user info

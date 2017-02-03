@@ -1,0 +1,10 @@
+---
+#remove oah user and
+
+#remove oah env user
+
+# remove ssh key for github if remove oah_enable_github_key is false
+
+# remove ssh key for gitlab if remove oah_enable_gitlab_key is false
+
+# display users created if verbose option enabled
