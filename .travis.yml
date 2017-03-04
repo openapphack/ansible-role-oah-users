@@ -45,15 +45,12 @@ script:
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
 
-  # Ensure PHP is installed and at the right version.
-  - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm which php'
-  - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm test -x /usr/bin/php'
+    # Check if oah is installed and working.
 
-  - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm php --version'
-  - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm /usr/bin/php --version | grep -qF "PHP ${php_version}"'
+    - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm oah --version || true'
 
-  # Ensure PHP configurations have taken effect.
-  - docker exec --tty "$(cat ${container_id})" env TERM=xterm php -i | grep 'memory_limit.*192'
+    # Clean up
+    - 'sudo docker stop "$(cat ${container_id})"'
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
