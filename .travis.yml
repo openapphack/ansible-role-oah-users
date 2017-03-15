@@ -45,12 +45,12 @@ script:
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
 
-    # Check if oah is installed and working.
+  # Check if oah is installed and working.
 
-    - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm oah --version || true'
+  - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm oah --version || true'
 
-    # Clean up
-    - 'sudo docker stop "$(cat ${container_id})"'
+  # Clean up
+  - 'sudo docker stop "$(cat ${container_id})"'
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/

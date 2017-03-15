@@ -1,16 +1,17 @@
 ---
+oah_command: install
 #default oah_user
-oah_user
+oah_user:
 #default oah_env_user
-oah_env_user
+oah_env_user:
 #default oah_user_gitlab_key
-oah_user_gitlab_key
+oah_user_gitlab_key:
 
 #default oah_user_github_key
-oah_user_github_key
+oah_user_github_key:
 
 #default oah_env_user_gitlab_key
-oah_env_user_gitlab_key
+oah_env_user_gitlab_key:
 
 #default oah_env_user_github_key
-oah_env_user_github_key
+oah_env_user_github_key:
