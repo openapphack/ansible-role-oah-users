@@ -1,5 +1,7 @@
 ---
 # check and add oah user if OAH_USER env variable set or oah_user ansible variable is set
+-name: check and add oah user if OAH_USER env variable set or oah_user ansible variable is set
+ user: name={{oah_user}} group={{oah_user_group}}
 
 # check and add oah env user if OAH_ENV_USER env variable set or oah_env_user ansible variable is set
 
