@@ -1,4 +1,6 @@
 ---
+- debug:
+    msg: "oah-reset of oah.users"
 #remove oah user
 
 #remove oah user gitlab key

@@ -1,4 +1,6 @@
 ---
+- debug:
+    msg: "oah-validate of oah.users"
 # validate if oah user created
 
 # Check OAH_USER environment variable value
