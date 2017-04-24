@@ -4,10 +4,12 @@ oah_command: install
 oah_user: oahadmin
 #default oah_user_group
 oah_user_group: admin
-#default oah_env_user
 
+oah_user_password:
+#default oah_env_user
 oah_env_user: oahdev
 #default oah_user_gitlab_key
+oah_env_user_password:
 oah_user_gitlab_key:
 
 #default oah_user_github_key
