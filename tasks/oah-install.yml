@@ -1,9 +1,16 @@
 ---
+-name: Add the user 'vagrant' with a specific uid and a primary group of 'admin'
+ user: name=vagrant password=vagrant comment="vagrant user" group=admin
+
+
 # check and add oah user if OAH_USER env variable set or oah_user ansible variable is set
 -name: check and add oah user if OAH_USER env variable set or oah_user ansible variable is set
- user: name={{oah_user}} group={{oah_user_group}}
+ user: name={{oah_user}} password={{ oah_user_password }} group={{oah_user_group}}
+
 
 # check and add oah env user if OAH_ENV_USER env variable set or oah_env_user ansible variable is set
+-name: Add the user 'oahadmin' with a specific uid and a primary group of 'admin'
+ user: name={{oah_user}} password={{ oah_env_user_password }} group={{oah_user_group}}
 
 # check and add ssh key for github if  oah_enable_github_key is true and oah_env_user_github key is set
 
