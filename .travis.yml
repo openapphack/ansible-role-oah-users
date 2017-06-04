@@ -20,7 +20,7 @@ env:
 
 before_install:
   # Pull container.
-  - 'docker pull ${oah_namespace}/oah-docker-${distro}-ansible:latest'
+  - 'docker pull ${oah_namespace}/oah-docker-${distro}:latest'
 
 script:
   - container_id=$(mktemp)
